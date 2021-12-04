@@ -1,0 +1,1704 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanderLab</title>
+    <link rel="stylesheet" href="Asset/css/style.css">
+    <link rel="stylesheet" href="Asset/Iconfont/themify-icons-font/themify-icons/themify-icons.css">
+    <link href="/Asset/Images/logo.PNG" rel='shortcut icon'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<style>
+    @media (min-width:1020px) {
+        #headers .icon {
+            display: none;
+        }
+
+
+    }
+
+    @media (max-width:1020px) and (min-width:740px) {
+        /* chuyển icon khi thu nhỏ */
+
+
+
+
+        #headers .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+
+
+        }
+
+        /* .close, .open{
+            transition: 0.4s;
+        } */
+        #close {
+            display: none;
+
+        }
+
+        /* .change .close{
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+            
+        }
+        .change .open{
+
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        } */
+
+
+
+
+        #header .heahder {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-left: 200px;
+        }
+
+        .containerheader {
+            display: none;
+        }
+
+        #header .login {
+            margin-left: 0;
+        }
+
+        .nav {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            background: rgb(0, 0, 0, 0.4);
+            height: 100%;
+            width: 100%;
+            display: none;
+           
+        }
+
+        #headers ul {
+
+            position: absolute;
+            z-index: 1;  
+            top:0;
+            bottom: 0;
+            background: white;
+            display: block;
+            float: left;
+            text-align: left;
+            display: none;
+            width: 30%;
+            padding: 15px;
+
+
+        }
+
+        #header ul .signup {
+            font-size: 15px;
+            background: #a053c5;
+            padding: 2px 7px;
+            width: 60%;
+            border: none;
+            color: #f9f9f9;
+        }
+        #header .signup, .login{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        #headers li {
+            margin: 20px 0;
+        }
+
+        /* chữu chạy */
+        h3 .console-container {
+
+
+            font-size: 40px;
+            text-align: center;
+            height: 200px;
+            width: 600px;
+            display: block;
+            position: absolute;
+            color: white;
+            top: -14%;
+            bottom: 0;
+            left: -400px;
+            right: 0;
+            margin: auto;
+        }
+
+        .container {
+            padding: 0;
+            margin: 0;
+
+            box-sizing: border-box;
+        }
+
+        .content h3 {
+            font-size: 39px;
+
+        }
+
+        .rowdomain {
+            display: inline-table;
+            margin-bottom: 0;
+
+        }
+
+        .domain {
+            width: 45%;
+            float: left;
+            margin-bottom: 15px;
+        }
+
+        .contai {
+            display: flex;
+            justify-content: center;
+            left: 25%;
+            position: relative;
+        }
+
+        .enough .text {
+            padding: 40px 0 40px 70px;
+
+        }
+
+        .enough .text h1 {
+
+
+            margin: 0;
+            font-size: 25px;
+        }
+
+        /* Bảng */
+
+        .ChooseYour {
+            height: auto;
+            padding: 80px 0 100px;
+            margin: 0 0 60px;
+            background: #222955;
+            box-shadow: none;
+            box-sizing: border-box;
+            border: none;
+            z-index: -999;
+
+
+        }
+
+        .tablechoose {
+            display: none;
+            background: none;
+
+        }
+
+        .mobi {
+            display: block;
+            border: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .tablechoose .star {
+            z-index: -999;
+            width: 100%;
+            margin: 0 0 20px 0;
+            height: auto;
+            padding: 0;
+            border: none;
+            background: white;
+        }
+
+        .chooserow {
+            display: block;
+            border: none;
+            z-index: 0;
+            background: none;
+
+            position: relative;
+
+
+            box-sizing: border-box;
+
+        }
+
+        .mothyear {
+            border: none;
+            margin-bottom: 50px;
+            background: none;
+            width: auto;
+            margin: 0;
+            margin: -79px 0 0 0;
+
+
+        }
+
+        .monthspan {
+            width: 100%;
+            border: none;
+            margin: 0;
+        }
+
+        .monthspan #moth1,
+        #year1 {
+            width: 50%;
+
+        }
+
+        .monthspan #year1 {
+            background: white;
+        }
+
+        .hmo {
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            padding: 20px 0;
+            width: 80%;
+            margin: 0;
+            border: none;
+            z-index: -999;
+        }
+
+        .hmo h1 {
+            justify-content: center;
+            text-align: center;
+            color: #222955;
+            font-weight: bold;
+            padding: 25px 0 0;
+            margin: 0 0 15px;
+            font-size: 57px;
+            display: flex;
+
+        }
+
+
+        .tablechoose p {
+            padding: 0;
+            margin: 0 0 25x;
+            font-size: 15px;
+            color: #3F86FF;
+            font-weight: bold;
+        }
+
+        .rows {
+            border-bottom: 1px solid #707387;
+        }
+
+        .rows .col1,
+        .col234 {
+            width: 50%;
+
+        }
+
+        .rows .col1 {
+            border: none;
+            padding: 0 25px;
+            line-height: 30px;
+
+        }
+
+        .rows .col234 {
+            text-align: right;
+            padding: 15px 25px;
+        }
+
+        .color {
+            width: 100%;
+            background-image: linear-gradient(#66FFFF, #99FFFF);
+        }
+
+
+        .imgfooter {
+            padding: 0 0 0;
+        }
+
+        .menufooter {
+
+            padding: 30px 20px;
+            margin: 20px 30px;
+            float: left;
+
+
+        }
+    }
+
+    @media (max-width:740px) {
+
+        #headers .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+
+        #header .heahder {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-left: 100px;
+        }
+
+        .containerheader {
+            display: none;
+        }
+
+        #header .login {
+            margin-left: 0;
+        }
+
+        .nav {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            background: rgb(0, 0, 0, 0.4);
+            height: 100%;
+            width: 100%;
+            display: none;
+        }
+
+        #headers ul {
+
+            position: absolute;
+
+            top: 5px;
+            bottom: 0;
+            background: white;
+            display: block;
+            float: left;
+            text-align: left;
+            display: none;
+            width: 30%;
+            padding: 15px;
+
+
+        }
+        #header .signup, .login{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+
+        #headers li {
+            margin: 25px 0;
+        }
+
+        /* CHỮU CHẠY */
+        h3 .console-container {
+
+
+            font-size: 40px;
+            text-align: center;
+            height: auto;
+            width: auto;
+            display: block;
+            position: absolute;
+            color: white;
+            top: 124%;
+            bottom: 0;
+            left: 5px;
+            right: 0;
+            margin: auto;
+        }
+
+        .container {
+            padding: 0;
+            margin: 0;
+
+            box-sizing: border-box;
+        }
+
+        .content {
+            padding: 70px 0 80px;
+            display: block;
+            position: relative;
+
+        }
+
+        #main .left55 {
+            padding: 15px 0;
+
+            width: 100%;
+
+        }
+
+        #main .right45 {
+            padding: 15px 0;
+            width: 100%;
+
+        }
+
+        #main .left45 {
+            padding: 15px 0;
+            width: 100%;
+
+        }
+
+        #main .right55 {
+            padding: 15px 0;
+            width: 100%;
+
+        }
+
+        .content h3 {
+            font-size: 39px;
+            text-align: center;
+
+
+        }
+
+        .content p {
+            font-size: 15px;
+            text-align: center;
+            padding: 30px 30px;
+            margin: 0;
+
+
+        }
+
+        .content a {
+
+            text-decoration: none;
+            color: #FA709A;
+
+            padding: 6px 24px;
+            font-weight: bold;
+            background: rgba(250, 112, 154, .2);
+
+            border-radius: 50px;
+        }
+
+        .btn {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+        .rowdomain {
+            display: inline-table;
+            margin-bottom: 0;
+
+        }
+
+        .domain {
+            width: 90%;
+            margin-bottom: 15px;
+            left: 20%;
+            justify-content: center;
+        }
+
+        .domains p {
+
+            margin: 0;
+            padding: 20px 50px;
+            text-align: center;
+        }
+
+
+
+
+        .enoughs {
+
+            padding: 80px 20px 160px;
+            background: rgba(81, 145, 255, .07) 18.91%;
+            ;
+        }
+
+        .enough {
+            display: block;
+            background: white;
+            box-sizing: border-box;
+        }
+
+        .enoughtext {
+            padding: 0 15px;
+
+
+        }
+
+        .enough .text {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .enough .text h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .enough .text p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .enough .btn {
+            height: 180px;
+
+            width: 93%;
+            padding: 0 16px;
+            background-image: linear-gradient(#acaaff, #ffd4cb);
+            clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 40%);
+            /* cah doc */
+            align-items: center;
+            justify-items: center;
+            display: flex;
+            /* canh ngang */
+            text-align: center;
+            justify-content: center;
+
+
+        }
+
+        .cloud .textimg {
+            padding: 0 15px;
+            margin: 0;
+
+        }
+
+        .cloud .text {
+            padding: 0;
+        }
+
+        .row {
+            text-align: center;
+            display: inline-table;
+            justify-content: center;
+            width: 100%;
+            margin-left: 30px;
+
+            box-sizing: border-box;
+
+        }
+
+        .cell {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            float: left;
+            width: 42%;
+            margin: 0 10px 10px 0;
+
+
+
+        }
+
+        .chooserow {
+            display: inline-table;
+
+            z-index: 0;
+
+            top: 70px;
+            background: white;
+            box-sizing: border-box;
+        }
+
+        .tablechoose .star,
+        .mothyear {
+            padding: 5px 5px;
+            text-align: center;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        /* Bangr */
+        .ChooseYour {
+            height: auto;
+            padding: 80px 10px 100px;
+            margin: 0 0 50px;
+            background: #222955;
+            box-shadow: none;
+            box-sizing: border-box;
+            border: none;
+            z-index: -999;
+
+
+        }
+
+        .tablechoose {
+            display: none;
+            background: none;
+
+        }
+
+        .mobi {
+            display: block;
+            border: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            z-index: 0;
+
+        }
+
+        .tablechoose .star {
+            z-index: -999;
+            width: 100%;
+            margin: 0 0 20px 0;
+            height: auto;
+            padding: 0;
+            border: none;
+            background: white;
+        }
+
+        .chooserow {
+            display: block;
+            border: none;
+            z-index: 0;
+            background: none;
+            position: relative;
+            box-sizing: border-box;
+
+        }
+
+        .ChooseYour .text {
+            padding: 0;
+            margin: 0;
+
+
+        }
+
+        .mothyear {
+            border: none;
+            margin-bottom: 50px;
+            background: none;
+            width: auto;
+            margin: 0;
+            margin: -79px 0 0 0;
+
+
+        }
+
+        .monthspan {
+            width: 100%;
+            border: none;
+            margin: 0;
+        }
+
+        .monthspan #moth1,
+        #year1 {
+            width: 50%;
+
+        }
+
+        .monthspan #year1 {
+            background: white;
+        }
+
+        .hmo {
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+            padding: 20px 0;
+            width: 80%;
+            margin: 0;
+            border: none;
+            z-index: -999;
+        }
+
+        .hmo h1 {
+            justify-content: center;
+            text-align: center;
+            color: #222955;
+            font-weight: bold;
+            padding: 25px 0 0;
+            margin: 0 0 15px;
+            font-size: 57px;
+            display: flex;
+
+        }
+
+
+        .tablechoose p {
+            padding: 0;
+            margin: 0 0 25x;
+            font-size: 15px;
+            color: #3F86FF;
+            font-weight: bold;
+        }
+
+        .rows {
+            border-bottom: 1px solid #707387;
+        }
+
+
+
+        .rows .col1 {
+            width: 90%;
+            border: none;
+            padding: 0 25px;
+            line-height: 30px;
+            text-align: left;
+
+        }
+
+        .rows .col234 {
+            width: 10%;
+            text-align: right;
+            padding: 15px 25px;
+        }
+
+        .color {
+            width: 100%;
+            background-image: linear-gradient(#66FFFF, #99FFFF);
+        }
+
+
+        .imgfooter {
+            padding: 0 15px 0;
+        }
+
+        .menufooter ul {
+            text-align: center;
+            justify-content: center;
+            padding: 0;
+
+            display: inline-table;
+            float: right;
+
+            box-sizing: border-box;
+        }
+
+
+        .menufooter {
+
+
+            text-align: center;
+            justify-content: center;
+            box-sizing: border-box;
+
+
+            padding: 30px 10px;
+            margin: 20px 20px;
+
+
+
+        }
+
+        .menufooter li {
+            display: inline-table;
+            text-align: center;
+
+        }
+
+        .copyright {
+            display: block;
+            color: #707387;
+        }
+
+        .copyright ul {
+            position: absolute;
+            left: 0;
+            list-style-type: none;
+            display: flex;
+            padding-left: 15px;
+
+        }
+
+
+    }
+</style>
+
+<body>
+    <div id="main">
+        <header id="headers" class="headers">
+            <div id="header">
+                <a class="icon" onclick="changeicon">
+                    <i id="open" class=" ti-menu-alt"></i>
+                    <i id="close" class=" ti-close"></i>
+
+                </a>
+                <div class="heahder">
+                    <img src="/Asset/Images/logo.PNG" alt="">
+                    LANDERLAB
+                </div>
+                <div class="containerheader"></div>
+                <div class="nav">
+                    <ul class="fooheader">
+                        <div class="iconclose"><i class="ti-close"></i></div>
+                        <li class="fetures"> <a href="">Features </a> </li>
+                        <li class="templates"><a href="">Templates</a></li>
+                        <li class="pricing"><a href="">Pricing</a></li>
+                        <li class="login"><a href="">Login</a></li>
+                        <li class="signup"><a href="">Sign up</a></li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+        <div class="container">
+
+            <div class="content">
+                <div class="left45  contenttext">
+                    &emsp;
+                    &numsp;
+                    <h3>Build
+                        <div class='console-container'>
+                            <span id='text'></span>
+                            <div class='console-underscore' id='console'>;
+
+                            </div>
+
+                        </div>
+                        </br> </br>
+                        Landing Pages
+                    </h3>
+                    <p>No coding, no server skills needed! With Landerlab, you can create, edit,
+                        and publish beautiful and responsive landing pages that convert more in a matter of clicks.</p>
+                    <a class="build  btn" href="">Start Free Trial</a>
+                </div>
+                <img class="right55" src="/Asset/Images/build.png" alt="">
+            </div>
+            <!-- create -->
+            <div class="content">
+                <img class="right55" src="/Asset/Images/create.png" alt="">
+                <div class="right45 contenttext">
+                    &emsp;
+                    &numsp;
+                    <h3>Create a New or Import an Existing Landing Page
+                    </h3>
+                    <p>Creating and publishing your landing pages is now easier than ever.
+                        With LanderLab you can be up and running in just a few seconds. Chose from our rich
+                        collection of 100+ ready to use templates, upload a .zip or directly import from an URL</p>
+                    <div class="btn"> <a href="">Learn More ></a></div>
+                </div>
+            </div>
+            <!-- lead -->
+            <div class="content">
+                <div class="left45 contenttext">
+                    &emsp;
+                    &numsp;
+                    <h3>Lead Collection & Management</h3>
+                    <p>Convert every visit into a lead! Create amazing forms and popups and use them in
+                        your landing pages to collect leads. Fully automate your sales workflow by
+                        connecting your prefered lead management CRM to
+                        LanderLab and automatically pushing leads to it.</p>
+                    <div class="btn"><a href="">Learn More ></a></div>
+
+                </div>
+
+                <img class="right55 " src="/Asset/Images/lead.png" alt="">
+                <div class="nen"></div>
+
+
+            </div>
+            <!-- A/B -->
+            <div class="content">
+                <img class="right55" src="/Asset/Images/Ab.png" alt="">
+                <div class="right45 contenttext">
+                    &emsp;
+                    &numsp;
+                    <h3>A/B Test Your Landing Pages
+                    </h3>
+                    <p>Customize images, headlines, call to actions or any other part,
+                        with our built in easy to use Visual Editor. Build your audiences
+                        by easily installing any tracking pixel for popular platforms like Facebook, Google Analytics,
+                        etc.
+                        Preview and publish your landing page online.</p>
+                    <div class="btn"> <a href="">Learn More ></a></div>
+                </div>
+            </div>
+            <!-- Track -->
+            <div class="content">
+                <div class="left45 contenttext">
+                    &emsp;
+                    &numsp;
+                    <h3>Track Your Landing Page Performance</h3>
+                    <p>Never again miss important insights about your customers!
+                        With LanderLab’s built-in tracking solution, you can track visits,
+                        clicks, conversions, etc, and break them down by country,
+                        city, device type, browser, or other dimensions.</p>
+                    <div class="btn"><a href="">Learn More ></a></div>
+
+                </div>
+                <img class="right55 " src="/Asset/Images/track.png" alt="">
+
+            </div>
+            <!-- +100 -->
+            <div class="content">
+                <img class="right55" src="/Asset/Images/+100.png" alt="">
+                <div class="right45 contenttext">
+                    &emsp;
+                    &numsp;
+                    <h3>+100 Ready To Use Templates
+                    </h3>
+                    <p class="ready">f you are looking to build your first landing page,
+                        then our collection of pre-designed templates is the best place to get st
+                        All templates have been curated to be fully responsive
+                        and optimized for maximal loading speeds..</p>
+                    <div class="btn"> <a href="">Learn More ></a></div>
+                </div>
+
+            </div>
+            <div class="DomainMa">
+                <div class="DomainManagement">
+                    <div class="domains">
+                        <h1>Domain Management</h1>
+                        <p class="domaintext">Mange your domains,
+                            subdomains and DNS records directly from LanderLab without the need
+                            to login to CloudFlare</p>
+                    </div>
+                </div>
+                <div class="rowdomain">
+                    <!-- Domains -->
+                    <div class="domain">
+                        <div class="coldomain  ">
+                            <div class="icon"> <img src="/Asset/Images/domainsvg.svg" alt=""></div>
+                            <h2>Domains</h2>
+                            <p>Add domains to LanderLab an use them to publish your landing pages. &emsp;</p>
+                            &emsp;
+                        </div>
+
+                    </div>
+                    <!-- SubDomains -->
+                    <div class="domain ">
+                        <div class="coldomain">
+                            <div class="icon"> <img src="/Asset/Images/subdomain.svg" alt=""></div>
+                            <h2>Subdomains</h2>
+                            <p>Manage subdomains for each domain and add a new dimension
+                                you can use to publish your landing pages.</p>
+                        </div>
+
+                    </div>
+                    <!-- DNS Records -->
+                    <div class="domain contai">
+                        <div class="coldomain ">
+                            <div class="icon"><img src="/Asset/Images/DNS.svg" alt=""></div>
+                            <h2>DNS Records</h2>
+                            <p>Create, edit delete DNS records (A, CNAME, TEXT, etc) directly from LanderLab</p>
+                            &emsp;
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="enoughs">
+
+                <div class="enough">
+                    <div class="enoughtext">
+                        <div class="text">
+                            <h1>Not Enough technical skills ?</h1>
+                            <p>We have our teams with developer and designers ready to help you.</p>
+                        </div>
+                    </div>
+                    <div class="btn btna"><a href="">Contact Us</a></div>
+                </div>
+            </div>
+            <div class="cloud">
+                <div class="textimg">
+                    <div class="text">
+                        <h1>Cloud Hosting & Fast Loading</h1>
+                        <p class="textcloud">All landing pages are published in a cloud multi-reagion hosting solution,
+                            for 100% guaranteed uptime and optimal loading speed all over the world</p>
+                    </div>
+                    <img src="/Asset/Images/cloud.svg" alt="">
+
+                    <div class="Gtmetrix">
+                        <div>
+                            <p>Gtmetrix</p>
+                        </div>
+                    </div>
+                    </br>
+                    <div class="row">
+                        <div class="cell cell1">
+                            <div class="celltext">
+                                <p>Performance</p>
+                                <h1>99%</h1>
+                            </div>
+
+                        </div>
+                        <div class="cell cell2">
+                            <div class="celltext">
+                                <p>Structure</p>
+                                <h1>83%</h1>
+                            </div>
+
+                        </div>
+                        <div class="cell cell3">
+                            <div class="celltext">
+                                <p>LCP</p>
+                                <h1>877ms</h1>
+                            </div>
+
+                        </div>
+                        <div class="cell cell4">
+                            <div class="celltext">
+                                <p>TBT</p>
+                                <h1>2ms</h1>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="ChooseYour">
+                <div class="text">
+                    <h1>Choose Your Perfect Plan</h1>
+                    <div class="tablechoose" id="tablechoose">
+                        <div class="chooserow">
+                            <div class="mothyear">
+                                <div class="monthspan">
+                                    <span id="moth">Moth</span>
+                                    &emsp;
+
+                                    <span id="year">Year</span>
+
+                                </div>
+                            </div>
+                            <!-- strater -->
+                            <div class="star">
+                                <h2>Starter</h2>
+                                <div class="hmo">
+                                    <h1 id="the1">$49</h1>
+                                    <p class="mo">/mo</p>
+                                </div>
+                                <p id="div1">Save $20 per month</p>
+                                <a href=""> Start Free Trial</a>
+                            </div>
+
+                            <!-- pro -->
+
+                            <div class="star color">
+                                <h2>Pro</h2>
+                                <div class="hmo">
+                                    <h1 id="the2">$69</h1>
+                                    <p class="mo">/mo</p>
+                                </div>
+                                <p id="div2">Save $20 per month</p>
+                                <a href=""> Start Free Trial</a>
+                            </div>
+                            <!-- Master -->
+                            <div class="star">
+                                <h2>Master</h2>
+                                <div class="hmo">
+                                    <h1 id="the3">$109</h1>
+                                    <p class="mo">/mo</p>
+                                </div>
+                                <p id="div3">Save $40 per month</p>
+                                <a href=""> Start Free Trial</a>
+                            </div>
+                        </div>
+                        <!-- 1 -->
+                        <div class="rows">
+                            <div class="col1">Published Landers</div>
+                            <div class="col234">10</div>
+                            <div class="col234 col23">50</div>
+                            <div class="col234">200</div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="rows">
+                            <div class="col1">Lead Capturing Widgets<i class="ti-info"></i></div>
+                            <div class="col234">1</div>
+                            <div class="col234 col23">5</div>
+                            <div class="col234">20</div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="rows">
+                            <div class="col1">A/B Testing<i class="ti-info"></i></div>
+                            <div class="col234">5</div>
+                            <div class="col234 col23">5</div>
+                            <div class="col234">20</div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="rows">
+                            <div class="col1">Unlimited Traffic & Leads</div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="rows">
+                            <div class="col1">Domain Management<i class="ti-info"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="rows">
+                            <div class="col1">Templates <i class="ti-info"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="rows">
+                            <div class="col1">Import From Zip</div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="rows">
+                            <div class="col1">Import From Adplexity<i class="ti-info"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 9 -->
+                        <div class="rows">
+                            <div class="col1">Import From Adplexity</div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 10 -->
+                        <div class="rows">
+                            <div class="col1">Tracker Integration</div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 11 -->
+                        <div class="rows">
+                            <div class="col1">Basic Tracking</div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 12 -->
+                        <div class="rows">
+                            <div class="col1">Cleaning and Customization Service </div>
+                            <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                            <div class="col234 col23"><i class="ti-arrow-circle-down"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 13 -->
+                        <div class="rows">
+                            <div class="col1">Cleaning and Customization Service</div>
+                            <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                            <div class="col234 col23 iconline"><i class="ti-line-dashed"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 14 -->
+                        <div class="rows">
+                            <div class="col1">Cleaning and Customization Service</div>
+                            <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                            <div class="col234 col23 iconline"><i class="ti-line-dashed"></i></div>
+                            <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+                        <!-- 15 -->
+                        <div class="rows">
+                            <div class="col1">Cleaning and Customization Service <i class="ti-info"></i></div>
+                            <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                            <div class="col234 col23 iconline"><i class="ti-line-dashed"></i></div>
+                            <div class="col234 "><i class="ti-arrow-circle-down"></i></div>
+                        </div>
+
+                    </div>
+                    <!-- mobidhshsngfgydusjakznxbvfg -->
+                    <div class="mobi tablechoose" id="mobi">
+                        <div class="chooserow">
+                            <div class="mothyear">
+                                <div class="monthspan">
+                                    <span id="moth1">Moth</span>
+                                    &emsp;
+
+                                    <span id="year1">Year</span>
+
+                                </div>
+                            </div>
+                            <!-- strater -->
+                            <div class="star">
+                                <div class="hmo">
+                                    <h1 id="them1">$49</h1>
+                                    <p id="divm1">Save $20/mo</p>
+                                    <a href=""> Start Free Trial</a>
+                                </div>
+                                <div class="rows">
+                                    <div class="col1">Published Landers</div>
+                                    <div class="col234">10</div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="rows">
+                                    <div class="col1">Lead Capturing Widgets</div>
+                                    <div class="col234">1</div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="rows">
+                                    <div class="col1">A/B Testing</div>
+                                    <div class="col234">5</div>
+                                </div>
+                                <!-- 4 -->
+                                <div class="rows">
+                                    <div class="col1">Unlimited Traffic & Leads</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="rows">
+                                    <div class="col1">Domain Management</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="rows">
+                                    <div class="col1">Templates </div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Zip</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 8 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Adplexity</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 9 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Adplexity</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 10 -->
+                                <div class="rows">
+                                    <div class="col1">Tracker Integration</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 11 -->
+                                <div class="rows">
+                                    <div class="col1">Basic Tracking</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 12 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service </div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 13 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service</div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 14 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service</div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 15 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service </div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+
+
+                            </div>
+                            &emsp;
+
+                            <!-- pro -->
+                            <div class="star">
+                                <div class="hmo color">
+                                    <h1 id="them2">$69</h1>
+                                    <p id="divm2">Save $20/mo</p>
+                                    <a href=""> Start Free Trial</a>
+                                </div>
+                                <div class="rows">
+                                    <div class="col1">Published Landers</div>
+                                    <div class="col234">50</div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="rows">
+                                    <div class="col1">Lead Capturing Widgets</i></div>
+                                    <div class="col234">5</div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="rows">
+                                    <div class="col1">A/B Testing</i></div>
+                                    <div class="col234">5</div>
+                                </div>
+                                <!-- 4 -->
+                                <div class="rows">
+                                    <div class="col1">Unlimited Traffic & Leads</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="rows">
+                                    <div class="col1">Domain Management</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="rows">
+                                    <div class="col1">Templates </div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Zip</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 8 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Adplexity</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 9 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Adplexity</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 10 -->
+                                <div class="rows">
+                                    <div class="col1">Tracker Integration</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 11 -->
+                                <div class="rows">
+                                    <div class="col1">Basic Tracking</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 12 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service </div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 13 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service</div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 14 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service</div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 15 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service </div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+
+
+                            </div>
+
+                            <!-- mástr -->
+                            <div class="star">
+                                <div class="hmo ">
+                                    <h1 id="them3">$109</h1>
+                                    <p id="divm3">Save $20/mo</p>
+                                    <a href=""> Start Free Trial</a>
+                                </div>
+                                <div class="rows">
+                                    <div class="col1">Published Landers</div>
+                                    <div class="col234">200</div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="rows">
+                                    <div class="col1">Lead Capturing Widgets</div>
+                                    <div class="col234">20</div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="rows">
+                                    <div class="col1">A/B Testing</div>
+                                    <div class="col234">20</div>
+                                </div>
+                                <!-- 4 -->
+                                <div class="rows">
+                                    <div class="col1">Unlimited Traffic & Leads</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="rows">
+                                    <div class="col1">Domain Management</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="rows">
+                                    <div class="col1">Templates</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Zip</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 8 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Adplexity</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 9 -->
+                                <div class="rows">
+                                    <div class="col1">Import From Adplexity</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 10 -->
+                                <div class="rows">
+                                    <div class="col1">Tracker Integration</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 11 -->
+                                <div class="rows">
+                                    <div class="col1">Basic Tracking</div>
+                                    <div class="col234"><i class="ti-arrow-circle-down"></i></div>
+                                </div>
+                                <!-- 12 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service </div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 13 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service</div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 14 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service</div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+                                <!-- 15 -->
+                                <div class="rows">
+                                    <div class="col1">Cleaning and Customization Service </div>
+                                    <div class="col234 iconline"><i class="ti-line-dashed"></i></div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imgfooter footer">
+                <img src="Asset/Images/logo.svg" alt="">
+            </div>
+            <div class="menufooter">
+                <ul>
+                    <li><a href="">About</a></li>&emsp;
+                    <li><a href="">Terms of Server</a></li>&emsp;
+                    <li><a href="">Privacy Polycy</a></li>&emsp;
+                    <li><a href="">Refund Polycy</a></li>&emsp;
+                    <li> <a href="">Temlates</a></li>&emsp;
+                    <li> <a href="">Prices</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© 2021 LanderLab. All Rights Reserved</p>
+                <ul>
+                    <li>
+                        Follow us on:
+                        <a href="" class="ti-facebook"></a>
+                        <a href="" class="ti-instagram"></a>
+                        <a href="" class="ti-twitter-alt"></a>
+                        <a href="" class="ti-linkedin"></a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+<script>
+    consoleText(['RESPONSIVE.', 'BEAUTIFUL', 'FAST', 'CONVERTING'], 'text', ['#FF66CC', '#0066FF', '#990099', '#FF6666']);
+
+    function consoleText(words, id, colors) {
+        if (colors === undefined) colors = ['#fff'];
+        var visible = true;
+        var con = document.getElementById('console');
+        var letterCount = 1;
+        var x = 1;
+        var waiting = false;
+        var target = document.getElementById(id)
+        target.setAttribute('style', 'color:' + colors[0])
+        window.setInterval(function () {
+
+            if (letterCount === 0 && waiting === false) {
+                waiting = true;
+                target.innerHTML = words[0].substring(0, letterCount)
+                window.setTimeout(function () {
+                    var usedColor = colors.shift();
+                    colors.push(usedColor);
+                    var usedWord = words.shift();
+                    words.push(usedWord);
+                    x = 1;
+                    target.setAttribute('style', 'color:' + colors[0])
+                    letterCount += x;
+                    waiting = false;
+                }, 1000)
+            } else if (letterCount === words[0].length + 1 && waiting === false) {
+                waiting = true;
+                window.setTimeout(function () {
+                    x = -1;
+                    letterCount += x;
+                    waiting = false;
+                }, 1000)
+            } else if (waiting === false) {
+                target.innerHTML = words[0].substring(0, letterCount)
+                letterCount += x;
+            }
+        }, 120)
+        window.setInterval(function () {
+            if (visible === true) {
+                con.className = 'console-underscore hidden'
+                visible = false;
+
+            } else {
+                con.className = 'console-underscore'
+
+                visible = true;
+            }
+        }, 400)
+    }</script>
+<!-- icon -->
+<script>
+    var iconclose = document.getElementById('close');
+    var iconopen = document.getElementById('open');
+    iconopen.onclick = function () {
+        iconclose.style.display = 'block';
+        iconopen.style.display = 'none';
+    }
+    iconclose.onclick = function () {
+        iconclose.style.display = 'none';
+        iconopen.style.display = 'block';
+    }
+
+
+    $(document).ready(function () {
+
+        $('.icon').click(function () {
+            $('ul').slideToggle();
+            $('.nav').slideToggle();
+        });
+    })
+</script>
+<script>
+
+    var month = document.getElementById('moth');
+    var years = document.getElementById('year');
+    var thep1 = document.getElementById('div1');
+    var thep2 = document.getElementById('div2');
+    var thep3 = document.getElementById('div3');
+    var theh1 = document.getElementById('the1');
+    var theh2 = document.getElementById('the2')
+    var theh3 = document.getElementById('the3')
+    month.onclick = function () {
+        month.style.background = "white"
+        month.style.colors = "#FF00FF"
+        years.style.colors = "black"
+        years.style.background = "#ccc"
+        thep1.style.display = "none"
+        thep2.style.display = "none"
+        thep3.style.display = "none"
+        theh1.textContent = "$69"
+        theh2.textContent = "$89"
+        theh3.textContent = "$149"
+
+
+
+    }
+    years.onclick = function () {
+        years.style.background = "white"
+        years.style.colors = "#FF00FF"
+        month.style.colors = "black"
+        month.style.background = "#ccc"
+        thep1.style.display = "block"
+        thep2.style.display = "block"
+        thep3.style.display = "block"
+        theh1.textContent = "$49"
+        theh2.textContent = "$69"
+        theh3.textContent = "$109"
+
+
+    }
+
+
+
+
+    // $(document).ready(function(){
+
+    //     $('.moth').click(function(){
+    //         $('.moth').addClass('.on');
+    //         $('.year').addClass('.off');
+
+
+
+
+    //     });
+    //     $('.year').click(function(){
+
+
+
+    //     });
+    // })
+
+//    if( button.$('.moth').click){
+//        button.$('.year')==false;
+
+//    }
+//    else{
+//     button.$('.moth') ==false;
+//     alert('moth tắt')
+//    }
+</script>
+<script>
+    var month = document.getElementById('moth1');
+    var years = document.getElementById('year1');
+    var thep1 = document.getElementById('divm1');
+    var thep2 = document.getElementById('divm2');
+    var thep3 = document.getElementById('divm3');
+    var theh1 = document.getElementById('them1');
+    var theh2 = document.getElementById('them2')
+    var theh3 = document.getElementById('them3')
+    month.onclick = function () {
+        month.style.background = "white"
+        month.style.colors = "#FF00FF"
+        years.style.colors = "black"
+        years.style.background = "#ccc"
+        thep1.style.display = "none"
+        thep2.style.display = "none"
+        thep3.style.display = "none"
+        theh1.textContent = "$69"
+        theh2.textContent = "$89"
+        theh3.textContent = "$149"
+
+
+
+    }
+    years.onclick = function () {
+        years.style.background = "white"
+        years.style.colors = "#FF00FF"
+        month.style.colors = "black"
+        month.style.background = "#ccc"
+        thep1.style.display = "block"
+        thep2.style.display = "block"
+        thep3.style.display = "block"
+        theh1.textContent = "$49"
+        theh2.textContent = "$69"
+        theh3.textContent = "$109"
+
+
+    }
+
+
+</script>
+
+</html>

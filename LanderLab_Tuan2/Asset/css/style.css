@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,100;1,200;1,300&display=swap');
+#main{
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(
+        180deg,rgba(250,112,154,.04) 73.42%,rgba(81,145,255,.07));
+}
+/* Chung */
+#main .left55{
+    float: left;
+    width: 58%;
+    padding: 0 15px;
+}
+#main .right45{
+    float: right;
+    width: 42%;
+    padding: 0 15px;
+}
+#main .left45{
+    float: left;
+    width: 42%;
+    padding: 0 15px;
+}
+#main .right55{
+    float: right;
+    width: 58%;
+    padding: 0 15px;
+}
+/* header */
+#headers{
+    
+    font-size: 18px;
+    
+   
+    padding: 12px 0;
+    margin: 0;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    left: 0;
+    background: white;
+
+    
+}
+#header {
+    padding: 0 24px;
+    margin: 0 15px;
+    display: flex;
+}
+#header a{
+    text-decoration: none;
+    color: #707387;
+    line-height: 39px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#header a:hover{
+    color: black;
+}
+#header .heahder{
+    display: flex;
+    
+    line-height: 39px;
+    font-weight: bold;
+}
+#header .heahder img{
+    width: 36px;
+    height: 36px;
+    padding: 0 12px 0 0;
+    
+
+}
+#header ul{
+    
+    display: inline-flex;
+    margin: 0;
+    list-style-type: none;
+    line-height: 24px;
+
+}
+#header .login{
+    margin-left: 70px;
+}
+#header .containerheader{
+    width: 33%;
+}
+
+#header ul a{
+    padding: 0 12px;
+   
+}
+#header ul .signup{
+    font-size: 15px;
+    background-color: #a053c5; 
+    padding: 2px 7px;
+
+    border: none;
+    color: #f9f9f9;
+}
+#header .icon ,.iconclose{
+    display: none;
+}
+
+
+/* build */
+.container{
+    padding: 0 15px;
+    margin: 0 16px;
+
+    box-sizing: border-box;
+}
+
+.content{
+    padding: 70px 0 80px;
+    display: flex;
+    position: relative;
+    
+}
+
+.content img{ 
+    margin: 30px 0 0;
+}
+.content h3{
+    font-size: 44px;
+    margin: 0 0 0 0;
+   display: inline-flex;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+/* hiệu ứng gõ chữ */
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+ h3 .console-container {
+ 
+  font-family:Khula;
+  font-size:40px;
+  text-align:center;
+  height:170px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:-40%;
+  bottom:0;
+  left:-600px;
+  right:0;
+  margin:auto;
+}
+h3 .console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.16em;
+  left:10px;
+}
+
+
+
+
+.content p{
+    font-size: 15px;
+    padding: 25px 0 30px;
+    margin: 0;
+    
+    
+}
+
+.content .build{
+    background-color: #a053c5;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 12px 45px;
+
+}
+.content a{
+    
+    text-decoration: none;
+    color: #FA709A;
+    font-weight: bold;;
+
+}
+/* .content .nen{
+    float: right;
+    transform: scaleX(-50%);
+    width: 300%;
+    background-image: linear-gradient(#CCFFFF, #CCFFFF,#CCFFFF);
+} */
+/* create */
+.createtext{
+   
+    padding: 0 15px;
+}
+
+/* lead */
+.content .ready{
+    padding: 40px 0;
+
+}
+/* Domain */
+.DomainMa{
+    padding: 80px  0;
+}
+.DomainManagement{
+    padding: 0 0 50px 0;
+}
+.domains h1{
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+.domains p{
+
+    margin: 0;
+    padding: 20px 195px;
+    text-align: center;
+}
+
+ .rowdomain{
+    display: flex;
+    margin-bottom: 0;
+   
+}
+ .domain{
+    width: 33.3333%;
+    display: flex;
+    padding: 0 15px;
+    box-sizing: content-box;
+    
+   
+   
+    
+}
+ .coldomain{
+    background: linear-gradient(
+        184.23deg, rgba(176, 205, 255, 0.7) -32.23%, rgba(255, 225, 253, 0.3) 60.3%,
+         rgba(255, 232, 176, 0.6) 103.92%);
+    padding: 40px 40px 2px 25px ;
+}
+.coldomain img{
+    margin-bottom: 26px;
+}
+.coldomain h2{
+    margin: 0;
+    padding-bottom: 16px;
+}
+.coldomain p{
+    padding: 10px 0 15px;
+    margin: 0;
+}
+/* Not Enough technical skills ? */
+.enoughs{
+    
+    padding: 80px 50px 160px;
+    background: rgba(81,145,255,.07) 18.91%;;
+}
+.enough{
+    display: flex;
+    background: white;
+    box-sizing: border-box;
+}
+.enoughtext{
+    padding: 0 15px;
+    width: 70%;
+   
+}
+.enough .text{
+    padding: 40px 10px 40px 70px;
+}
+.enough .text h1{
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.enough .text p{
+    margin: 0;
+    font-size: 15px;
+}
+.enough .btn{
+    
+    width: 30%;
+    padding: 0 16px;
+    background-image: linear-gradient(#acaaff,#ffd4cb );
+    clip-path:polygon(20% 0, 0 100%, 100% 100%, 100% 0);
+    /* cah doc */
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    /* canh ngang */
+    text-align: center;
+    justify-content: center;
+   
+
+}
+.enough a{
+    padding: 6px 25px;
+   color: black;
+   font-weight: bold;;
+    background:#ffff;
+    text-decoration: none;
+}
+/* Cloud Hosting & Fast Loading */
+.cloud{
+    padding: 80px 0;
+    background: #222955;
+}
+.cloud .textimg{
+    padding:0 15px;
+    margin: 0 26px;
+}
+.cloud .text{
+    padding: 0 70px;
+}
+.cloud h1{
+    color: white;
+    font-size: 44px;
+     font-weight: bold;
+     padding: 0 0 20px;
+     text-align: center;
+     margin: 0;
+}
+.cloud .textcloud{
+    color: #ccc;
+    text-align: center;
+    margin: 0;
+    padding: 0 15px;
+}
+.cloud img{
+    width: 100%;
+    padding: 80px 0 0;
+}
+.cloud p{
+    color: #ccc;
+    padding: 24px 0 0;
+    font-size: 12px;
+}
+.cloud .Gtmetrix{
+    padding:  15px  0 ;
+    width: 100%;
+    display: block;
+    
+    
+    margin: 0;
+    
+}
+
+.cloud .Gtmetrix p{
+    float: left;
+    margin: 0 7%;
+    padding: 20px 0 0;
+}
+.row{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 7%;
+  
+    box-sizing: border-box;
+    
+}
+.cell{
+    width: 30%; 
+  margin-right: 25px;
+}
+.cell .celltext{
+    display: block;
+    padding: 30px ;
+}
+.row h1{
+    font-size: 35px;
+    padding-bottom: 0;
+}
+.row p, h1{
+    margin: 0;
+    padding: 0;
+}
+.cell1{
+    
+    background-image: linear-gradient(#fa709a, #003366,#000066);
+}
+.cell1 p{
+    color: #fa709a;
+}
+.cell2{
+    
+    background-image: linear-gradient(#cc00ff, #003366,#000066);
+}
+.cell2 p{
+    color: #33FFFF;
+}
+.cell3{
+    
+    background-image: linear-gradient(#9999FF, #003366,#000066);
+}
+.cell3 p{
+    color: #66FF66;
+}
+.cell4{
+    
+    background-image: linear-gradient(#cc9933, #003366,#000066);
+}
+.cell4 p{
+    color: #FFFF33;
+}
+
+
+
+  
+/* Choose Your Perfect Plan */
+.ChooseYour{
+    padding: 80px 0 0;
+    background: #222955;
+    box-shadow:0px 38px 38px #222955;
+   
+}
+/* Hàng đầu tiên của bàng */
+.ChooseYour .text{
+    padding:0 15px;
+    margin: 0 26px;
+    
+}
+.hmo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ h1{
+    justify-content: center;
+    text-align: center;
+    color: white;
+   font-weight: bold;
+   padding: 50px 0;
+   font-size: 44px;
+   display: flex;
+   
+}
+.ChooseYour .mo{
+    
+    display: flex;
+    margin-bottom: 0;
+    line-height: 70px;
+}
+.tablechoose{
+    background: white;
+   
+}
+.chooserow{
+    display: flex;
+    position: -webkit-sticky;
+    z-index: 1;
+    position: sticky;
+    top: 70px;
+    background: white;
+    box-sizing: border-box;
+}
+.tablechoose .star, .mothyear {
+    padding: 35px 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 25%;
+    box-sizing: border-box;
+  
+}
+.mothyear {
+    height: auto;
+    padding: 35px 25px;
+  
+    
+}
+.monthspan{
+    width: auto;
+   display: flex;
+    height: auto;
+    border-radius: 50px;
+    background:#ccc;
+    
+}
+.mothyear span {
+    height: auto;
+   border-radius: 50px;
+  
+   padding: 8px 10px;
+   margin: 3px 3px 3px 0 ;
+   cursor: pointer;
+  
+    
+}
+ .monthspan #year{
+    background:white;
+ }
+
+
+
+/* background màu xanh ô giữa */
+.tablechoose .color{
+    background-image: linear-gradient(#33FFFF,#99FFFF);
+}
+.tablechoose .color a{
+    border: none;
+}
+.tablechoose .mothyear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.tablechoose h1{
+    font-size: 40px;
+    color: black;
+    padding: 0;
+    margin: 0 0 10px;
+}
+.tablechoose h2{
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 10px;
+   
+}
+.tablechoose p{
+    padding: 0;
+    margin: 0 0 15px;
+    font-size: 15px;
+}
+.chooserow .star a{
+ 
+   padding: 8px 35px;
+   font-size: 15px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   text-decoration: none;
+   border: 1px solid black;
+   color: #4E526F;
+   font-weight: bold;
+   background: white;
+}
+.chooserow .star a:hover{
+    background: #cc00ff;
+
+}
+.mobi{
+    display: none;
+}
+
+/* Các hàng tiếp theo */
+.rows{
+    display: flex;
+}
+.rows .col1{
+    border: 1px solid #ccc;
+    padding: 12px 0 12px 25px;
+    font-size: 15px;
+    color:#6A6464;
+    display: flex;
+    align-items: center;
+    
+}
+.rows .col1, .col234{
+    width: 25%;
+}
+/* màu nền của ô thứ 3  */
+.rows .col23{
+    background: #f9f9f9;
+}
+.rows .iconline i{
+     border-radius: none;
+     background: none;
+     font-weight: bold;
+
+     color:#c850c0 ;
+     font-size: 24px;
+
+}
+.rows .col234{
+    color: #c850c0;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 25px;
+    font-weight: bold;;
+}
+.rows i{
+    background: rgba(250,112,154,.25098);
+    border-radius: 50%;
+    color: #fa709a;
+     font-weight: bold;;
+}
+/* iocn i */
+.col1 i{
+     border: none;
+    font-size: 12px;
+    color:white ;
+    border-radius: 30px;
+    background: #6A6464;
+    float: right;
+    margin: 0 5px auto auto;
+    
+  
+}
+.imgfooter{
+    text-align: center;
+    margin: 0 0 30px 0;
+    display: block;
+    justify-content: center;
+    padding: 100px 0 0;
+}
+.menufooter {
+   
+    display: flex;
+    padding:30px 0 ;
+    margin:20px 0 ;
+    text-align: center;
+    justify-content: center;
+    border-bottom:1px solid #707387 ;
+    
+}
+.menufooter ul{
+    display: flex;
+    list-style-type: none;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.menufooter a{
+    text-decoration: none;
+    color: #707387;
+    
+
+}
+.menufooter a:hover{
+  
+    color: black;
+    
+
+}
+.copyright{
+    display: flex;
+    color: #707387;
+}
+.copyright{
+    float: left;
+}
+.copyright ul{
+    position: absolute;
+    right: 41px;
+    list-style-type: none;
+    display: flex;
+
+}
+.copyright a{
+    
+    text-decoration: none;
+    color: #707387;
+}
+/* chế độ moblie */
+.mobile{
+    display: none;
+}
+
+.mobile .right55, .left45 , .right45, .left55 {
+    width: 100%;
+    padding: 0 15px;
+}
